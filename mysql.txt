@@ -1,0 +1,73 @@
+--
+-- Database: `db_proiect_pwebc`
+--
+
+CREATE DATABASE IF NOT EXISTS `db_proiect_pwebc` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `db_proiect_pwebc`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_cv_maker`
+--
+
+DROP TABLE IF EXISTS `tbl_cv_maker`;
+CREATE TABLE IF NOT EXISTS `tbl_cv_maker` (
+`id` int(11) NOT NULL, 
+`Nume` varchar(150) NOT NULL, 
+`Titlu` varchar(150) NOT NULL, 
+`DataNastere` date NOT NULL, 
+`Telefon` int(10) NOT NULL, 
+`Email` varchar(150) NOT NULL, 
+`Profil` text NOT NULL, 
+`Aptitudine1` varchar(150) NOT NULL,
+`DescriereApt1` text NOT NULL,
+`Aptitudine2` varchar(150) NOT NULL,
+`DescriereApt2` text NOT NULL,
+`Aptitudine3` varchar(150) NOT NULL,
+`DescriereApt3` text NOT NULL,
+`Angajator` varchar(150) NOT NULL, 
+`TitluJob` varchar(150) NOT NULL, 
+`AnJob` int(4) NOT NULL,  
+`DescriereJob` text NOT NULL,  
+`Scoala` varchar(150) NOT NULL, 
+`DescriereEducatie` text NOT NULL,
+`Diploma` varchar(150) NOT NULL,
+`Hobby1` text NOT NULL,
+`Hobby2` text NOT NULL,
+`Hobby3` text NOT NULL,
+`Hobby4` text NOT NULL,
+`Username` varchar(150) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `tbl_contact`
+--
+ALTER TABLE `tbl_cv_maker`
+ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tbl_contact`
+--
+ALTER TABLE `tbl_cv_maker`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+
+
+
+--USERS
+
+CREATE TABLE users (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'BIZ UDPMincho', serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+textarea {
+    resize: none;
+    width: 90%;
+    font-size:20px;
+}
+#Telefon{
+    width: 90%;
+    font-size:20px;
+}
+.container {
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+    font-size: 20px;
+}
+
+#output {
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+
+#printf {
+    display: none;
+    text-align: center;
+}
+
+#printb,
+#submit {
+    background-color: #A6CFD5;
+    width: 75px;
+    height: 75px;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 15px;
+}
+
+#printb,
+#submit:hover {
+    cursor: pointer;
+}
+
+@media print {
+    #printb {
+        display: none;
+    }
+}
+
+#first-section,
+#second-section {
+    width: 35%;
+    margin-left: 32.5%;
+    border-radius: 1%;
+    border: 1px solid black;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    margin-top: 10px;
+    padding-top: 15px;
+    background-color: white;
+}
+
+input[type=text],
+input[type=email],
+input[type=date],
+select {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+
+#first-div {
+    height: 150px;
+    background-color: rgb(5, 60, 94);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+#left{
+    width: 30%;
+}
+
+#right{
+    width: 60%;
+}
+
+.continut{
+    margin-top: 20px;
+    width:50%;
+    margin-left:20%;
+    margin-bottom: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.adauga{
+    position: relative;
+}
+
+.lista-cv{
+    font-size:40px;
+}
